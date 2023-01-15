@@ -1,6 +1,6 @@
-# pangeo-forge.org
+# pangeo.io
 
-Pangeo-Forge's home page
+Pangeo's home page
 
 | CI                    | [![pre-commit.ci status][pre-commit.ci-badge]][pre-commit.ci-link] |
 | :-------------------- | :----------------------------------------------------------------: |
@@ -9,7 +9,7 @@ Pangeo-Forge's home page
 
 ## Overview
 
-This is a Next.js site. It is continuously deployed on [Vercel](https://vercel.com/pangeo-forge). The live site is hosted at https://pangeo-forge.org.
+This is a Next.js site. It is continuously deployed on [Vercel](https://vercel.com/pangeo-forge). The live site is hosted at https://pangeo.io.
 
 ## Requirements
 
@@ -21,7 +21,7 @@ This is a Next.js site. It is continuously deployed on [Vercel](https://vercel.c
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/pangeo-forge/pangeo-forge.org
+git clone https://github.com/jhamman/pangeo.io
 ```
 
 ### 2. Install dependencies
@@ -48,9 +48,9 @@ Open http://localhost:3000 with your browser.
   </p>
 </a>
 
-[vercel-badge]: https://img.shields.io/github/deployments/pangeo-forge/pangeo-forge.org/production?label=vercel&logo=vercel&logoColor=white
+[vercel-badge]: https://img.shields.io/github/deployments/jhamman/pangeo.io/production?label=vercel&logo=vercel&logoColor=white
 [vercel-link]: https://vercel.com/pangeo-forge/pangeo-forge-org
-[license-badge]: https://img.shields.io/github/license/pangeo-forge/pangeo-forge.org
-[repo-link]: https://github.com/pangeo-forge/pangeo-forge.org
-[pre-commit.ci-badge]: https://results.pre-commit.ci/badge/github/pangeo-forge/pangeo-forge.org/main.svg
-[pre-commit.ci-link]: https://results.pre-commit.ci/latest/github/pangeo-forge/pangeo-forge.org/main
+[license-badge]: https://img.shields.io/github/license/jhamman/pangeo.io
+[repo-link]: https://github.com/jhamman/pangeo.io
+[pre-commit.ci-badge]: https://results.pre-commit.ci/badge/github/jhamman/pangeo.io/main.svg
+[pre-commit.ci-link]: https://results.pre-commit.ci/latest/github/jhamman/pangeo.io/main
