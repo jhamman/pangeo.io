@@ -42,8 +42,8 @@ export const Footer = () => {
             >
               <Image
                 w={225}
-                src={'/pangeo-forge-text-only-white.png'}
-                alt={'Pangeo-Forge logo'}
+                src={'/pangeo_simple_logo_white.png'}
+                alt={'Pangeo logo'}
               />
             </Stack>
 

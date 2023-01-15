@@ -1,7 +1,7 @@
 import { Link } from '@/components'
 export const Vercel = () => {
   return (
-    <Link href='https://vercel.com?utm_source=pangeo-forge&utm_campaign=oss'>
+    <Link href='https://vercel.com?utm_source=pangeo&utm_campaign=oss'>
       <svg
         width='212'
         height='44'

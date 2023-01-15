@@ -2,7 +2,6 @@ import { Link } from '@/components'
 import { navItems as menuItems } from '@/components/header/data'
 import { DesktopNav } from '@/components/header/desktop-nav'
 import { MobileNav } from '@/components/header/mobile-nav'
-import { OrchestratorAlert } from '@/components/header/alert'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import {
   Box,
@@ -17,7 +16,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import React from 'react'
-import { IoLogoGithub, IoMoon, IoSunny } from 'react-icons/io5'
+import { IoLogoGithub, IoMoon, IoSunny, IoLogoTwitter } from 'react-icons/io5'
 
 export const Header = () => {
   const navItems = React.useMemo(() => menuItems, [])
@@ -87,8 +86,8 @@ export const Header = () => {
             >
               <Image
                 w={225}
-                src={'/pangeo-forge-text-only-white.png'}
-                alt={'Pangeo-Forge logo'}
+                src={'/pangeo_simple_logo_white.png'}
+                alt={'Pangeo logo'}
               />
             </Stack>
           </Flex>
@@ -110,7 +109,19 @@ export const Header = () => {
                 textDecoration: 'none',
               }}
               as={Link}
-              href={'https://github.com/pangeo-forge'}
+              href={'https://twitter.com/pangeo_data'}
+              size={'sm'}
+              variant={'ghost'}
+              aria-label={'Twitter logo'}
+              icon={<IoLogoTwitter />}
+              fontSize={'2xl'}
+            />
+            <IconButton
+              _hover={{
+                textDecoration: 'none',
+              }}
+              as={Link}
+              href={'https://github.com/pangeo'}
               size={'sm'}
               variant={'ghost'}
               aria-label={'GitHub logo'}
@@ -134,7 +145,6 @@ export const Header = () => {
           <MobileNav isOpen={isMobileNavOpen} navItems={navItems} />
         </Collapse>
       </Flex>
-      <OrchestratorAlert />
     </Box>
   )
 }

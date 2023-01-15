@@ -7,6 +7,8 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import React from 'react'
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
+
 
 export const Hero = () => {
   const bg = useColorModeValue(
@@ -18,7 +20,11 @@ export const Hero = () => {
       {' '}
       <Container maxW='container.xl' py={90} centerContent>
         <Flex direction='column'>
-          <Image src='/pangeo-forge-logo-white.png' alt='Pangeo-Forge logo' />
+          <Image
+                w={225}
+                src={'/pangeo_simple_logo_white.png'}
+                alt={'Pangeo logo'}
+              />
           <Text
             textTransform={'uppercase'}
             color={'white'}
@@ -26,9 +32,14 @@ export const Hero = () => {
             align={'center'}
           >
             {' '}
-            A cloud-native data repository for ocean, weather, and climate
-            science
+            A community platform for Big Data geoscience
           </Text>
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="pangeo_data"
+            options={{height: 400}}
+          />
+          {/*  TODO: add discourse */}
         </Flex>
       </Container>
     </Box>

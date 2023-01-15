@@ -1,13 +1,9 @@
-import { Layout, Hero, About, HowItWorks } from '@/components'
-import { Summary } from '@/components/dashboard'
+import { Layout, Hero } from '@/components'
 
 const Index = () => {
   return (
     <Layout>
       <Hero />
-      <Summary />
-      <About />
-      <HowItWorks />
     </Layout>
   )
 }

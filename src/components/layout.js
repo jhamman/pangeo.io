@@ -1,5 +1,5 @@
 import { Footer, Header } from '@/components'
-import { Menu } from '@/components/dashboard'
+// import { Menu } from '@/components/dashboard'
 import { getRootURL } from '@/lib/seo-utils'
 import { Box, Flex } from '@chakra-ui/react'
 import { NextSeo } from 'next-seo'
@@ -7,9 +7,9 @@ import { NextSeo } from 'next-seo'
 export const Layout = ({
   children,
   menu = null,
-  title = 'Pangeo-Forge',
-  description = 'A cloud-native data repository for ocean, weather, and climate science.',
-  image = `${getRootURL()}/pangeo-forge-logo-white.png`,
+  title = 'Pangeo',
+  description = 'A community platform for Big Data geoscience',
+  image = `${getRootURL()}/pangeo-logo.png`,
   url = getRootURL(),
 }) => {
   return (
@@ -39,7 +39,7 @@ export const Layout = ({
       >
         <Box>
           <Header />
-          {menu && <Menu />}
+          {/* {menu && <Menu />} */}
           {children}
         </Box>
         <Footer />
